@@ -44,6 +44,8 @@ class Warehouse:
     def del_items_by_name(self, item_name, amount):
         """Удаление некоторого количества товара по названию"""
         if amount > self.all_items[item_name]['amount']:
+            """Здесь не кидаю исключение, потому что в реальной программе в этом случае был бы редирект на метод,
+            обрабатывающий эту ситуацию для пользователя. Сам метод бы не выполнился"""
             print('Too much. Try to get fewer items!')
         else:
             self.all_items[item_name]['amount'] -= amount
