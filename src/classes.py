@@ -1,4 +1,4 @@
-from exceptions import ItemNotFoundException
+from src.exceptions import ItemNotFoundException
 
 
 class Item:
