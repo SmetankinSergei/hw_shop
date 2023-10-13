@@ -1,4 +1,5 @@
-from classes import Warehouse, Item
+from classes.item import Item
+from classes.warehouse import Warehouse
 
 if __name__ == '__main__':
     item1 = Item("Смартфон", 10000)

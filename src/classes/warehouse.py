@@ -1,22 +1,6 @@
 from src.exceptions import ItemNotFoundException
 
 
-class Item:
-    pay_rate = 1.0
-    all = []
-
-    def __init__(self, name: str, price: float) -> None:
-        self.name = name
-        self.price = price
-
-    def __repr__(self):
-        return f'{__class__.__name__}: name="{self.name}, price="{self.price}"'
-
-    def apply_discount(self) -> None:
-        """Применяет установленную скидку для конкретного товара."""
-        self.price = self.price * Item.pay_rate
-
-
 class Warehouse:
     def __init__(self):
         """Словарь, содержащий все товары. Должен иметь вид:
