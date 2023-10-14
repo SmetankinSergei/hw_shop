@@ -1,4 +1,5 @@
-from src.classes import Warehouse, Item
+from src.classes.warehouse import Warehouse
+from src.classes.item import Item
 
 
 def test_add_new_item():
