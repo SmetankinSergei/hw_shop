@@ -5,3 +5,4 @@ if __name__ == '__main__':
 
     assert repr(item1) == 'Item: name="Смартфон", price="10000"'
     assert str(item1) == 'Смартфон'
+
