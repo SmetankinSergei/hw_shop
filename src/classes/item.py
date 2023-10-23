@@ -28,6 +28,10 @@ class Item:
     def __str__(self):
         return f'{self.name}'
 
+    def __add__(self, other):
+        if isinstance(other, Item):
+            return self.price + other.price
+
     def apply_discount(self) -> None:
         """Применяет установленную скидку для конкретного товара."""
         self.price = self.price * Item.pay_rate
