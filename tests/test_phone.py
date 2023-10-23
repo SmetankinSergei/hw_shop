@@ -9,3 +9,4 @@ def test_repr():
 def test_sim_amount():
     phone1 = Phone("iPhone 14", 120_000, 2)
     assert phone1.sim_amount == 2
+
